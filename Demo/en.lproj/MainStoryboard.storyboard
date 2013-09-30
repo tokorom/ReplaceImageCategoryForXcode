@@ -1,16 +1,69 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2519" systemVersion="12A206j" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="12F37" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1856"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
     </dependencies>
     <scenes>
-        <!--class Prefix:identifier View Controller-->
+        <!--View Controller-->
         <scene sceneID="5">
             <objects>
                 <viewController id="2" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cGq-XK-co9"/>
+                        <viewControllerLayoutGuide type="bottom" id="m23-TM-aeA"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="3">
-                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="UISearchBarBorder.png" translatesAutoresizingMaskIntoConstraints="NO" id="rAm-3e-b6m">
+                                <rect key="frame" x="20" y="14" width="280" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="UISearchBarBorder.png" translatesAutoresizingMaskIntoConstraints="NO" id="n4L-3P-SwI">
+                                <rect key="frame" x="20" y="66" width="280" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="replaceByStretchImage" value="image"/>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jk6-tA-13S">
+                                <rect key="frame" x="20" y="173" width="88" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <inset key="contentEdgeInsets" minX="16" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <size key="titleShadowOffset" width="0.0" height="-1"/>
+                                <state key="normal" title="Back" backgroundImage="UINavigationBarDefaultBack.png">
+                                    <color key="titleColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pJ9-VK-2ee">
+                                <rect key="frame" x="116" y="173" width="88" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <inset key="contentEdgeInsets" minX="16" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <size key="titleShadowOffset" width="0.0" height="-1"/>
+                                <state key="normal" title="Back" backgroundImage="UINavigationBarDefaultBack.png">
+                                    <color key="titleColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="replaceByStretchImage" value="backgroundImage"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="la5-pc-zMY">
+                                <rect key="frame" x="212" y="173" width="88" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <inset key="contentEdgeInsets" minX="16" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <size key="titleShadowOffset" width="0.0" height="-1"/>
+                                <state key="normal" title="Back" backgroundImage="UINavigationBarDefaultBack.png">
+                                    <color key="titleColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="replaceByStretchImage" value="backgroundImage,30,31,30,10"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
@@ -18,6 +71,13 @@
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="UINavigationBarDefaultBack.png" width="42" height="60"/>
+        <image name="UINavigationBarDefaultBack.png" width="42" height="60"/>
+        <image name="UINavigationBarDefaultBack.png" width="42" height="60"/>
+        <image name="UISearchBarBorder.png" width="70" height="62"/>
+        <image name="UISearchBarBorder.png" width="70" height="62"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

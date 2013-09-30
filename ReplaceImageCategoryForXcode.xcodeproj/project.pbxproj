@@ -23,6 +23,12 @@
 		C68378B317F90807004CD88A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C68378AA17F90807004CD88A /* ViewController.m */; };
 		C68378B917F90815004CD88A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C68378B517F90815004CD88A /* InfoPlist.strings */; };
 		C68378BA17F90815004CD88A /* ReplaceImageCategoryForXcodeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C68378B717F90815004CD88A /* ReplaceImageCategoryForXcodeTests.m */; };
+		C68378BF17F908DB004CD88A /* NSObject+ReplaceImage.m in Sources */ = {isa = PBXBuildFile; fileRef = C68378BE17F908DB004CD88A /* NSObject+ReplaceImage.m */; };
+		C68378C017F908DB004CD88A /* NSObject+ReplaceImage.m in Sources */ = {isa = PBXBuildFile; fileRef = C68378BE17F908DB004CD88A /* NSObject+ReplaceImage.m */; };
+		C68378C517F91D11004CD88A /* UINavigationBarDefaultBack.png in Resources */ = {isa = PBXBuildFile; fileRef = C68378C317F91D11004CD88A /* UINavigationBarDefaultBack.png */; };
+		C68378C617F91D11004CD88A /* UISearchBarBorder.png in Resources */ = {isa = PBXBuildFile; fileRef = C68378C417F91D11004CD88A /* UISearchBarBorder.png */; };
+		C68378C917F9223C004CD88A /* UIButton+ReplaceImage.m in Sources */ = {isa = PBXBuildFile; fileRef = C68378C817F9223C004CD88A /* UIButton+ReplaceImage.m */; };
+		C68378CA17F9223C004CD88A /* UIButton+ReplaceImage.m in Sources */ = {isa = PBXBuildFile; fileRef = C68378C817F9223C004CD88A /* UIButton+ReplaceImage.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +63,13 @@
 		C68378B617F90815004CD88A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C68378B717F90815004CD88A /* ReplaceImageCategoryForXcodeTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReplaceImageCategoryForXcodeTests.m; sourceTree = "<group>"; };
 		C68378B817F90815004CD88A /* Tests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
+		C68378BD17F908DB004CD88A /* NSObject+ReplaceImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+ReplaceImage.h"; sourceTree = "<group>"; };
+		C68378BE17F908DB004CD88A /* NSObject+ReplaceImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ReplaceImage.m"; sourceTree = "<group>"; };
+		C68378C317F91D11004CD88A /* UINavigationBarDefaultBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UINavigationBarDefaultBack.png; sourceTree = "<group>"; };
+		C68378C417F91D11004CD88A /* UISearchBarBorder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UISearchBarBorder.png; sourceTree = "<group>"; };
+		C68378C717F9223C004CD88A /* UIButton+ReplaceImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+ReplaceImage.h"; sourceTree = "<group>"; };
+		C68378C817F9223C004CD88A /* UIButton+ReplaceImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+ReplaceImage.m"; sourceTree = "<group>"; };
+		C68378CB17F931AB004CD88A /* ReplaceImageCategoryForXcode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReplaceImageCategoryForXcode.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +99,7 @@
 		C683785717F90667004CD88A = {
 			isa = PBXGroup;
 			children = (
+				C68378BC17F908DB004CD88A /* ReplaceImageCategoryForXcode */,
 				C683789C17F90807004CD88A /* Demo */,
 				C68378B417F90815004CD88A /* Tests */,
 				C683786217F90667004CD88A /* Frameworks */,
@@ -128,6 +142,7 @@
 				C68378A817F90807004CD88A /* main.m */,
 				C68378A917F90807004CD88A /* ViewController.h */,
 				C68378AA17F90807004CD88A /* ViewController.m */,
+				C68378C117F91D11004CD88A /* Resources */,
 			);
 			path = Demo;
 			sourceTree = "<group>";
@@ -140,6 +155,35 @@
 				C68378B817F90815004CD88A /* Tests-Info.plist */,
 			);
 			path = Tests;
+			sourceTree = "<group>";
+		};
+		C68378BC17F908DB004CD88A /* ReplaceImageCategoryForXcode */ = {
+			isa = PBXGroup;
+			children = (
+				C68378CB17F931AB004CD88A /* ReplaceImageCategoryForXcode.h */,
+				C68378BD17F908DB004CD88A /* NSObject+ReplaceImage.h */,
+				C68378BE17F908DB004CD88A /* NSObject+ReplaceImage.m */,
+				C68378C717F9223C004CD88A /* UIButton+ReplaceImage.h */,
+				C68378C817F9223C004CD88A /* UIButton+ReplaceImage.m */,
+			);
+			path = ReplaceImageCategoryForXcode;
+			sourceTree = "<group>";
+		};
+		C68378C117F91D11004CD88A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C68378C217F91D11004CD88A /* Images */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C68378C217F91D11004CD88A /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				C68378C317F91D11004CD88A /* UINavigationBarDefaultBack.png */,
+				C68378C417F91D11004CD88A /* UISearchBarBorder.png */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,8 +263,10 @@
 			files = (
 				C68378B117F90807004CD88A /* MainStoryboard.storyboard in Resources */,
 				C68378AE17F90807004CD88A /* Default@2x.png in Resources */,
+				C68378C617F91D11004CD88A /* UISearchBarBorder.png in Resources */,
 				C68378AC17F90807004CD88A /* Default-568h@2x.png in Resources */,
 				C68378AD17F90807004CD88A /* Default.png in Resources */,
+				C68378C517F91D11004CD88A /* UINavigationBarDefaultBack.png in Resources */,
 				C68378B017F90807004CD88A /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -240,6 +286,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C68378C917F9223C004CD88A /* UIButton+ReplaceImage.m in Sources */,
+				C68378BF17F908DB004CD88A /* NSObject+ReplaceImage.m in Sources */,
 				C68378B317F90807004CD88A /* ViewController.m in Sources */,
 				C68378B217F90807004CD88A /* main.m in Sources */,
 				C68378AB17F90807004CD88A /* AppDelegate.m in Sources */,
@@ -250,6 +298,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C68378CA17F9223C004CD88A /* UIButton+ReplaceImage.m in Sources */,
+				C68378C017F908DB004CD88A /* NSObject+ReplaceImage.m in Sources */,
 				C68378BA17F90815004CD88A /* ReplaceImageCategoryForXcodeTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
