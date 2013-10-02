@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C68263F817FC37C50005DAAD /* UINavigationBarDefaultBack.png in Resources */ = {isa = PBXBuildFile; fileRef = C68263F617FC37C50005DAAD /* UINavigationBarDefaultBack.png */; };
+		C68263F917FC37C50005DAAD /* UISearchBarBorder.png in Resources */ = {isa = PBXBuildFile; fileRef = C68263F717FC37C50005DAAD /* UISearchBarBorder.png */; };
 		C683786417F90667004CD88A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C683786317F90667004CD88A /* UIKit.framework */; };
 		C683786617F90667004CD88A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C683786517F90667004CD88A /* Foundation.framework */; };
 		C683786817F90667004CD88A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C683786717F90667004CD88A /* CoreGraphics.framework */; };
@@ -42,6 +44,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C68263F617FC37C50005DAAD /* UINavigationBarDefaultBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UINavigationBarDefaultBack.png; sourceTree = "<group>"; };
+		C68263F717FC37C50005DAAD /* UISearchBarBorder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UISearchBarBorder.png; sourceTree = "<group>"; };
 		C683786017F90667004CD88A /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C683786317F90667004CD88A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		C683786517F90667004CD88A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -96,6 +100,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C68263F417FC37C50005DAAD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C68263F517FC37C50005DAAD /* Images */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C68263F517FC37C50005DAAD /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				C68263F617FC37C50005DAAD /* UINavigationBarDefaultBack.png */,
+				C68263F717FC37C50005DAAD /* UISearchBarBorder.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
 		C683785717F90667004CD88A = {
 			isa = PBXGroup;
 			children = (
@@ -153,6 +174,7 @@
 				C68378B517F90815004CD88A /* InfoPlist.strings */,
 				C68378B717F90815004CD88A /* ReplaceImageCategoryForXcodeTests.m */,
 				C68378B817F90815004CD88A /* Tests-Info.plist */,
+				C68263F417FC37C50005DAAD /* Resources */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -275,6 +297,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C68263F917FC37C50005DAAD /* UISearchBarBorder.png in Resources */,
+				C68263F817FC37C50005DAAD /* UINavigationBarDefaultBack.png in Resources */,
 				C68378B917F90815004CD88A /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -500,6 +524,7 @@
 				C683789817F90668004CD88A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C683789917F90668004CD88A /* Build configuration list for PBXNativeTarget "Tests" */ = {
 			isa = XCConfigurationList;
@@ -508,6 +533,7 @@
 				C683789B17F90668004CD88A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

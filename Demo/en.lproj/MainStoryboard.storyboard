@@ -73,9 +73,6 @@
     </scenes>
     <resources>
         <image name="UINavigationBarDefaultBack.png" width="42" height="60"/>
-        <image name="UINavigationBarDefaultBack.png" width="42" height="60"/>
-        <image name="UINavigationBarDefaultBack.png" width="42" height="60"/>
-        <image name="UISearchBarBorder.png" width="70" height="62"/>
         <image name="UISearchBarBorder.png" width="70" height="62"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
