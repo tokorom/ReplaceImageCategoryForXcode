@@ -1,0 +1,4 @@
+nguage: objective-c
+
+script:
+    - make clean test
