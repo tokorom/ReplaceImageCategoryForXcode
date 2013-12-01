@@ -1,15 +1,9 @@
-PROJECT = ReplaceImageCategoryForXcode.xcodeproj
-TEST_TARGET = Tests
+SCHEME = Tests
 
 clean:
-	xcodebuild clean \
-		-project $(PROJECT)
+	xcodebuild clean
 
 test:
-	xcodebuild \
-		-project $(PROJECT) \
-		-target $(TEST_TARGET) \
-		-sdk iphonesimulator \
-		-configuration Debug \
-		TEST_AFTER_BUILD=YES \
-		TEST_HOST=
+	xcodebuild test \
+		-scheme $(SCHEME) \
+		-destination "name=iPhone Retina (4-inch 64-bit),OS=7.0"
