@@ -7,12 +7,14 @@ clean:
 test:
 	xcodebuild test \
 		-scheme $(SCHEME) \
-		-destination $(DESTINATION)
+		-destination $(DESTINATION) \
+		OBJROOT=. \
 
 test-with-coverage:
 	xcodebuild test \
 		-scheme $(SCHEME) \
 		-destination $(DESTINATION) \
+		OBJROOT=. \
 		GCC_INSTRUMENT_PROGRAM_FLOW_ARCS=YES \
 		GCC_GENERATE_TEST_COVERAGE_FILES=YES \
 		GCC_PREPROCESSOR_DEFINITIONS='${inherited} GCOV_FLUSH=1'
