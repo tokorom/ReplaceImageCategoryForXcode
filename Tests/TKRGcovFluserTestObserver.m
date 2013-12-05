@@ -25,6 +25,7 @@
 + (void)gcovFlush
 {
 #if GCOV_FLUSH
+    NSLog(@"###### FLUSH!!!!!!");
     extern void __gcov_flush(void);
     __gcov_flush();
 #endif
