@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C66528E11850325C004D8D1C /* TKRGcovFluserTestObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = C66528E01850325C004D8D1C /* TKRGcovFluserTestObserver.m */; };
+		C66528E3185032F9004D8D1C /* TKRGcovFlusher.m in Sources */ = {isa = PBXBuildFile; fileRef = C66528DA1850274A004D8D1C /* TKRGcovFlusher.m */; };
 		C68263F817FC37C50005DAAD /* UINavigationBarDefaultBack.png in Resources */ = {isa = PBXBuildFile; fileRef = C68263F617FC37C50005DAAD /* UINavigationBarDefaultBack.png */; };
 		C68263F917FC37C50005DAAD /* UISearchBarBorder.png in Resources */ = {isa = PBXBuildFile; fileRef = C68263F717FC37C50005DAAD /* UISearchBarBorder.png */; };
 		C683786417F90667004CD88A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C683786317F90667004CD88A /* UIKit.framework */; };
@@ -44,6 +46,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C66528D91850274A004D8D1C /* TKRGcovFlusher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKRGcovFlusher.h; sourceTree = "<group>"; };
+		C66528DA1850274A004D8D1C /* TKRGcovFlusher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKRGcovFlusher.m; sourceTree = "<group>"; };
+		C66528DF1850325C004D8D1C /* TKRGcovFluserTestObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKRGcovFluserTestObserver.h; sourceTree = "<group>"; };
+		C66528E01850325C004D8D1C /* TKRGcovFluserTestObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKRGcovFluserTestObserver.m; sourceTree = "<group>"; };
 		C68263F617FC37C50005DAAD /* UINavigationBarDefaultBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UINavigationBarDefaultBack.png; sourceTree = "<group>"; };
 		C68263F717FC37C50005DAAD /* UISearchBarBorder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UISearchBarBorder.png; sourceTree = "<group>"; };
 		C683786017F90667004CD88A /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -171,6 +177,10 @@
 		C68378B417F90815004CD88A /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				C66528DF1850325C004D8D1C /* TKRGcovFluserTestObserver.h */,
+				C66528E01850325C004D8D1C /* TKRGcovFluserTestObserver.m */,
+				C66528D91850274A004D8D1C /* TKRGcovFlusher.h */,
+				C66528DA1850274A004D8D1C /* TKRGcovFlusher.m */,
 				C68378B517F90815004CD88A /* InfoPlist.strings */,
 				C68378B717F90815004CD88A /* ReplaceImageCategoryForXcodeTests.m */,
 				C68378B817F90815004CD88A /* Tests-Info.plist */,
@@ -325,6 +335,8 @@
 				C68378CA17F9223C004CD88A /* UIButton+ReplaceImage.m in Sources */,
 				C68378C017F908DB004CD88A /* NSObject+ReplaceImage.m in Sources */,
 				C68378BA17F90815004CD88A /* ReplaceImageCategoryForXcodeTests.m in Sources */,
+				C66528E3185032F9004D8D1C /* TKRGcovFlusher.m in Sources */,
+				C66528E11850325C004D8D1C /* TKRGcovFluserTestObserver.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,6 +456,10 @@
 		C683789717F90668004CD88A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Demo/Demo-Prefix.pch";
 				INFOPLIST_FILE = "Demo/Demo-Info.plist";
@@ -455,6 +471,10 @@
 		C683789817F90668004CD88A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Demo/Demo-Prefix.pch";
 				INFOPLIST_FILE = "Demo/Demo-Info.plist";
@@ -476,8 +496,8 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Demo/Demo-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
 					"$(inherited)",
+					"DEBUG=1",
 				);
 				INFOPLIST_FILE = "Tests/Tests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
