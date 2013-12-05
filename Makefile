@@ -12,4 +12,5 @@ test:
 		GCC_PREPROCESSOR_DEFINITIONS='${inherited} GCOV_FLUSH=1'
 
 send-coverage:
+	find ./ -name "*Test.gcno" | xargs rm
 	coveralls --verbose
