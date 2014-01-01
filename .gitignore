@@ -6,6 +6,7 @@
 temp.plist
 # Build dir
 build/
+tmp/
 # Xcode project files except for the project file
 *.xcodeproj/*
 !*.xcodeproj/project.pbxproj
