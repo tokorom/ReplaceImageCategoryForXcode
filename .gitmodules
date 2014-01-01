@@ -1,0 +1,3 @@
+[submodule "Tests/Externals/GenerateTestCoverageFor_iOS7"]
+	path = Tests/Externals/GenerateTestCoverageFor_iOS7
+	url = https://github.com/tokorom/GenerateTestCoverageFor_iOS7.git
